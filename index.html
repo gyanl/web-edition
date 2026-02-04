@@ -13,1265 +13,21 @@
     href="https://fonts.googleapis.com/css2?family=Besley:wght@500;600&family=TASA+Orbiter:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <style>
-    /* CSS Variables from Figma Design Tokens */
-    :root {
-      /* Colors */
-      --text-primary: #101419;
-      --text-secondary: #4F5155;
-      --text-tertiary: #797C81;
-      --text-black: #000000;
-      --text-white: #FFFFFF;
-      --bg-primary: #FFFFFF;
-      --bg-secondary: #F9F9F9;
-      --bg-light: #FAFFFF;
-      --accent-primary: #A3143D;
-      --accent-secondary: #EF2D19;
-      --accent-light: #F7968C;
-      --outline: rgba(209, 213, 215, 0.5);
-      --card-bg: #FFFFFF;
-      --icon-bg: #F2F2F2;
-      --loader-bg: #E5E7EB;
-
-      /* Shadow colors */
-      --shadow-light: rgba(0, 0, 0, 0.05);
-      --shadow-medium: rgba(0, 0, 0, 0.1);
-      --shadow-dark: rgba(0, 0, 0, 0.25);
-      --shadow-inset: rgba(0, 0, 0, 0.25);
-      --shadow-white: rgba(255, 255, 255, 0.3);
-      --shadow-white-strong: rgba(255, 255, 255, 0.6);
-
-      /* Typography */
-      --font-heading: 'Besley', Georgia, serif;
-      --font-body: 'TASA Orbiter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-button: 'TASA Orbiter', -apple-system, BlinkMacSystemFont, sans-serif;
-
-
-      --letter-spacing-tight: -0.02em;
-      --letter-spacing-slightly-tight: -0.01em;
-      --letter-spacing-wide: 0.01em;
-
-      --font-size-sm: 12px;
-      --font-size-md: 14px;
-      --font-size-lg: 16px;
-      --font-size-xl: 18px;
-      --font-size-2xl: 20px;
-      --font-size-3xl: 24px;
-      --font-size-4xl: 28px;
-      --font-size-5xl: 32px;
-      --font-size-6xl: 36px;
-      --font-size-7xl: 40px;
-      --font-size-8xl: 48px;
-      --font-size-9xl: 56px;
-      --font-size-10xl: 64px;
-
-      /* Spacing */
-      --spacing-xs: 4px;
-      --spacing-sm: 8px;
-      --spacing-md: 16px;
-      --spacing-lg: 24px;
-      --spacing-xl: 32px;
-      --spacing-2xl: 48px;
-      --spacing-3xl: 64px;
-      --spacing-4xl: 80px;
-      --spacing-5xl: 120px;
-
-      /* Border Radius */
-      --radius-sm: 6px;
-      --radius-md: 8px;
-      --radius-lg: 12px;
-      --radius-xl: 16px;
-
-      /* Transitions */
-      --transition-fast: 0.2s;
-      --transition-medium: 0.3s;
-      --transition-slow: 0.5s;
-      --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
-
-      /* Container */
-      --container-max-width: 1280px;
-      --content-max-width: 1080px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: var(--font-body);
-      color: var(--text-primary);
-      background: var(--bg-primary);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      line-height: 140%;
-    }
-
-    /* Typography Utility System */
-    h1 {
-      font-family: var(--font-heading);
-      font-weight: 500;
-      font-size: var(--font-size-6xl);
-      line-height: 1.3;
-      letter-spacing: var(--letter-spacing-tight);
-      color: var(--text-primary);
-    }
-
-    h2 {
-      font-family: var(--font-heading);
-      font-weight: 500;
-      font-size: var(--font-size-4xl);
-      line-height: 1.5;
-      letter-spacing: var(--letter-spacing-tight);
-      color: var(--text-primary);
-    }
-
-    .title {
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: var(--font-size-2xl);
-      line-height: 1.25;
-      letter-spacing: var(--letter-spacing--slightly-tight);
-      color: var(--text-primary);
-    }
-
-    .title-small {
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: var(--font-size-lg);
-      line-height: 1.25;
-      letter-spacing: var(--letter-spacing-slightly-tight);
-      color: var(--text-primary);
-    }
-
-    .text-lg {
-      font-family: var(--font-body);
-      font-weight: 500;
-      font-size: var(--font-size-xl);
-      line-height: 1.4;
-      letter-spacing: var(--letter-spacing-md);
-      color: var(--text-secondary);
-    }
-
-    .text-base {
-      font-family: var(--font-body);
-      font-weight: 400;
-      font-size: var(--font-size-lg);
-      line-height: 1.4;
-      letter-spacing: var(--letter-spacing-tight);
-    }
-
-    .text-bold {
-      font-weight: 700;
-    }
-
-    .text-sm {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    /* Color Utilities */
-    .text-primary {
-      color: var(--text-primary);
-    }
-
-    .text-secondary {
-      color: var(--text-secondary);
-    }
-
-    .text-md {
-      font-size: var(--font-size-md);
-    }
-
-    .text-tertiary {
-      color: var(--text-tertiary);
-    }
-
-    /* Button Component */
-    .button {
-      display: inline-flex;
-      justify-content: center;
-      padding: 10px 20px;
-      border-radius: var(--radius-sm);
-      font-family: var(--font-body);
-      font-weight: 500;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--shadow-medium);
-      transition: all var(--transition-fast);
-      position: relative;
-    }
-
-    .button-primary {
-      background: linear-gradient(rgba(255, 79, 130, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
-        linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-primary) 100%);
-      color: var(--text-white);
-      text-shadow: 0px 0.8px 1px var(--shadow-white);
-    }
-
-    .button-primary::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0px 1px 0px 0px var(--shadow-white);
-      pointer-events: none;
-    }
-
-    .button-secondary {
-      background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--shadow-light) 100%),
-        linear-gradient(90deg, var(--bg-secondary) 0%, var(--bg-secondary) 100%);
-      color: var(--accent-primary);
-      text-shadow: 0px 0.8px 0.5px var(--text-white);
-      box-shadow: 0px 1px 4px -2px var(--shadow-dark), 0px 0px 0px 1px var(--shadow-medium);
-    }
-
-    .button-secondary::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
-      pointer-events: none;
-    }
-
-    .button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.5), 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Header Styles from Figma */
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: var(--spacing-md) var(--spacing-lg);
-      background: var(--bg-primary);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 1px 0 var(--shadow-light);
-    }
-
-    .logo-container {
-      position: relative;
-      height: 36px;
-    }
-
-    .logo-web {
-      position: absolute;
-      left: 73.616px;
-      top: 0;
-      font-family: var(--font-logo-primary);
-      font-weight: 700;
-      font-size: 18.43px;
-      line-height: 1;
-      letter-spacing: -0.3686px;
-      color: #43454B;
-    }
-
-    .logo-edition {
-      position: absolute;
-      left: 74.279px;
-      top: 19.52px;
-      font-family: var(--font-logo-accent);
-      font-weight: 400;
-      font-size: 8.96px;
-      line-height: 1;
-      letter-spacing: 0.224px;
-      color: rgba(67, 69, 75, 0.45);
-    }
-
-    .logo-red-bar {
-      position: absolute;
-      left: 64px;
-      top: 3.264px;
-      right: 88.99px;
-      bottom: 0.577px;
-      background: var(--accent-secondary);
-    }
-
-    .nav-container {
-      display: flex;
-      gap: var(--spacing-xs);
-      align-items: center;
-      padding: var(--spacing-xs);
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(12px);
-      border-radius: var(--radius-md);
-      box-shadow: 0px 0px 0px 1px var(--shadow-medium);
-      position: relative;
-    }
-
-    .nav-container::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0px 0px 0px 1px var(--text-white);
-      pointer-events: none;
-    }
-
-    .nav-link {
-      padding: 6px 12px 8px;
-      border-radius: var(--radius-sm);
-      color: var(--text-tertiary);
-      text-decoration: none;
-      transition: all var(--transition-fast);
-    }
-
-    .nav-link:hover {
-      color: var(--text-primary);
-      background: rgba(0, 0, 0, 0.03);
-    }
-
-    .nav-divider {
-      width: 1px;
-      height: var(--spacing-lg);
-      background: var(--shadow-light);
-      border-radius: var(--radius-xl);
-    }
-
-    .header-actions {
-      display: flex;
-      gap: var(--spacing-sm);
-      align-items: center;
-    }
-
-    .header-cart {
-      padding: var(--spacing-sm) var(--spacing-md) 10px;
-      border-radius: var(--radius-sm);
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: all var(--transition-fast);
-    }
-
-    .header-cart:hover {
-      background: rgba(0, 0, 0, 0.03);
-    }
-
-    .header-login {
-      padding: var(--spacing-sm) var(--spacing-md) 10px;
-      border-radius: var(--radius-sm);
-      color: var(--accent-primary);
-      text-shadow: 0px 0.8px 0.5px var(--text-white);
-      text-decoration: none;
-      background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--shadow-light) 100%),
-        linear-gradient(90deg, var(--bg-secondary) 0%, var(--bg-secondary) 100%);
-      box-shadow: 0px 1px 4px -2px var(--shadow-dark), 0px 0px 0px 1px var(--shadow-medium);
-      position: relative;
-      transition: all var(--transition-fast);
-    }
-
-    .header-login::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
-      pointer-events: none;
-    }
-
-    .header-login:hover {
-      transform: translateY(-1px);
-      box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.35), 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Layout */
-    .container {
-      max-width: var(--container-max-width);
-      margin: 0 auto;
-      padding: 0 100px;
-    }
-
-    /* Hero Section - matching Figma exactly */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
-      align-items: center;
-      padding: var(--spacing-4xl) 0;
-      text-align: center;
-    }
-
-    .hero-content {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-md);
-      align-items: center;
-      justify-content: center;
-      width: var(--content-max-width);
-      max-width: 100%;
-    }
-
-    .hero-title {
-      width: 547px;
-      max-width: 100%;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out 0.2s forwards;
-    }
-
-    .hero-description {
-      max-width: 480px;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out 0.4s forwards;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: var(--spacing-sm);
-      align-items: flex-start;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out 0.6s forwards;
-    }
-
-    /* Dashboard Section */
-    .dashboard-section {
-      padding: var(--spacing-5xl) 0;
-    }
-
-    .section-content {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-xl);
-      width: var(--content-max-width);
-      max-width: 100%;
-      margin: 0 auto;
-    }
-
-    .section-content>.h1 {
-      opacity: 0;
-    }
-
-    .section-content>.h1.animated {
-      animation: fadeInUp 0.8s ease-out forwards;
-    }
-
-    .dashboard-grid {
-      display: flex;
-      gap: var(--spacing-xl);
-      align-items: flex-start;
-    }
-
-    .dashboard-features {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-2xl);
-    }
-
-    .feature-item {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-sm);
-      cursor: pointer;
-      transition: opacity var(--transition-medium);
-      position: relative;
-      opacity: 0;
-    }
-
-    .feature-item.slide-in {
-      animation: fadeInUp 0.6s ease-out forwards;
-    }
-
-    .feature-item:nth-child(1) {
-      animation-delay: 0.1s;
-    }
-
-    .feature-item:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .feature-item:nth-child(3) {
-      animation-delay: 0.3s;
-    }
-
-    .feature-item::after {
-      content: '';
-      position: absolute;
-      bottom: -18px;
-      left: 0;
-      height: var(--spacing-xs);
-      width: 0%;
-      background: var(--accent-primary);
-      border-radius: 2px;
-      transition: width var(--transition-medium);
-    }
-
-    .feature-item.active::after {
-      animation: loadProgress 7s linear forwards;
-    }
-
-    @keyframes loadProgress {
-      from {
-        width: 0%;
-      }
-
-      to {
-        width: 100%;
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes scaleIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    /* Animation classes */
-    .animate-on-scroll {
-      opacity: 0;
-    }
-
-    .animate-on-scroll.animated {
-      animation: fadeInUp 0.6s ease-out forwards;
-    }
-
-    .animate-fade-in {
-      animation: fadeIn 0.8s ease-out;
-    }
-
-    .animate-scale-in {
-      animation: scaleIn 0.5s ease-out;
-    }
-
-    .feature-item:not(.active) {
-      opacity: 0.5;
-    }
-
-    .feature-item.active {
-      opacity: 1;
-    }
-
-    .feature-title {
-      color: var(--text-primary);
-    }
-
-    .feature-description {
-      color: var(--text-secondary);
-    }
-
-    .dashboard-visual {
-      width: 588px;
-      height: 425px;
-      border-radius: 12px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.25),
-        inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-    }
-
-    .dashboard-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .dashboard-visual img.active {
-      opacity: 1;
-    }
-
-    /* Search Section */
-    .search-section {
-      padding: 120px 0;
-      background: var(--bg-secondary);
-    }
-
-    .search-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 64px;
-    }
-
-    .search-card {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      transition: transform 0.3s ease;
-    }
-
-    .search-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .search-icon {
-      width: 48px;
-      height: 48px;
-      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%),
-        linear-gradient(90deg, #F2F2F2 0%, #F2F2F2 100%);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-
-    .search-icon::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0px -4px 4px -2px rgba(0, 0, 0, 0.05),
-        inset 0px 4px 3px -2px rgba(255, 255, 255, 0.6),
-        inset 0px 0px 0px 1px rgba(255, 255, 255, 0.6);
-      pointer-events: none;
-    }
-
-    .search-icon img {
-      filter: brightness(0) saturate(100%) invert(13%) sepia(78%) saturate(3147%) hue-rotate(334deg) brightness(87%) contrast(95%);
-    }
-
-    .search-card-content {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-
-    .search-visual-wrapper {
-      margin-top: 48px;
-      border-radius: 16px;
-      box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
-    }
-
-    .search-visual {
-      width: 100%;
-      border-radius: 8px;
-      display: block;
-      box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Technology Section */
-    .technology-section {
-      padding: 120px 0;
-      background: white;
-    }
-
-    .technology-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-
-    .technology-card {
-      background: #F9F9F9;
-      border-radius: 12px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .technology-visual {
-      position: relative;
-      width: 100%;
-      height: 410px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .technology-visual-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: bottom;
-    }
-
-    .technology-content {
-      padding: 32px;
-    }
-
-    .technology-content .eyebrow {
-      margin-bottom: 2px;
-    }
-
-    .technology-content .h1 {
-      margin-bottom: 16px;
-    }
-
-    .technology-content .text-base {
-      color: var(--text-secondary);
-    }
-
-    /* Data Coverage Section */
-    .data-coverage-section {
-      padding: 120px 0;
-      background: white;
-    }
-
-    .data-coverage-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 24px;
-    }
-
-    .data-coverage-description {
-      margin-bottom: 64px;
-    }
-
-    .accordion-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .accordion-item {
-      background: rgba(255, 255, 255, 0.75);
-      border-radius: 8px;
-      padding: 16px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.25), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all var(--transition-fast);
-    }
-
-    .accordion-item::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0px 2px 0px 0px white;
-      pointer-events: none;
-    }
-
-    .accordion-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-    }
-
-    .accordion-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex: 1;
-      gap: 24px;
-    }
-
-    .accordion-title {
-      font-family: var(--font-heading);
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 1.42;
-      letter-spacing: -0.24px;
-      color: var(--text-secondary);
-    }
-
-    .accordion-badge {
-      font-family: var(--font-body);
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.4;
-      letter-spacing: -0.14px;
-      color: var(--text-tertiary);
-      white-space: nowrap;
-    }
-
-    .accordion-icon {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      transition: transform var(--transition-fast);
-    }
-
-    .accordion-icon img {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    /* Pricing Section */
-    .pricing-section {
-      padding: 120px 0;
-      background: var(--bg-secondary);
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 48px;
-      margin-top: 64px;
-    }
-
-    .pricing-card {
-      background: white;
-      border-radius: 12px;
-      padding: 48px;
-      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
-    }
-
-    .pricing-card .eyebrow {
-      margin-bottom: 16px;
-    }
-
-    .pricing-amount {
-      font-family: var(--font-heading);
-      font-size: 48px;
-      font-weight: 500;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-    }
-
-    .pricing-period {
-      color: var(--text-secondary);
-      margin-bottom: 32px;
-    }
-
-    .pricing-features {
-      list-style: none;
-      margin-bottom: 32px;
-    }
-
-    .pricing-features li {
-      padding: 12px 0;
-      color: var(--text-secondary);
-      border-bottom: 1px solid #E5E7EB;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .pricing-features li:last-child {
-      border-bottom: none;
-    }
-
-    .pricing-features li::before {
-      content: "✓";
-      color: #A3143D;
-      font-weight: bold;
-      flex-shrink: 0;
-    }
-
-    /* Footer */
-    .footer {
-      padding: 64px 0 32px;
-      background: #1F2937;
-      color: white;
-    }
-
-    .inner-shadow {
-      box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      border-radius: var(--radius-lg);
-      display: block;
-    }
-
-    .logo-img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 48px;
-      margin-bottom: 48px;
-    }
-
-    .footer-column h4 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-
-    .footer-links {
-      list-style: none;
-    }
-
-    .footer-links li {
-      margin-bottom: 12px;
-    }
-
-    .footer-links a {
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover {
-      color: white;
-    }
-
-    .footer-bottom {
-      padding-top: 32px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      text-align: center;
-      color: rgba(255, 255, 255, 0.5);
-    }
-
-    /* Mobile Navigation */
-    .mobile-menu-icon {
-      display: none;
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
-
-    .mobile-menu-icon svg {
-      width: 100%;
-      height: 100%;
-      stroke: var(--text-primary);
-      stroke-width: 2px;
-    }
-
-    /* Responsive */
-    @media (max-width: 1000px) {
-      .container {
-        padding: 0 40px;
-      }
-
-      .section-content {
-        width: 100%;
-      }
-
-      .dashboard-grid {
-        flex-direction: column;
-      }
-
-      .dashboard-visual {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 588 / 425;
-      }
-
-      .search-grid,
-      .technology-grid,
-      .pricing-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 24px;
-      }
-
-      /* Mobile Header */
-      .header {
-        padding: 12px 16px;
-        height: 56px;
-        gap: 16px;
-      }
-
-      .logo-container {
-        position: static;
-        height: 28px;
-        width: 156px;
-        order: 2;
-      }
-
-      .logo-web {
-        left: 74.616px;
-        font-size: 18.43px;
-      }
-
-      .logo-edition {
-        left: 75.279px;
-        top: 19.52px;
-        font-size: 8.96px;
-      }
-
-      .mobile-menu-icon {
-        display: block;
-        order: 1;
-      }
-
-      .nav-container {
-        display: none;
-      }
-
-      .header-actions {
-        gap: 4px;
-        order: 3;
-        width: auto;
-      }
-
-      .header-cart {
-        padding: 8px 16px 10px;
-        font-size: 14px;
-      }
-
-      .header-login {
-        padding: 8px 16px 10px;
-        font-size: 14px;
-      }
-
-      /* Hero Section */
-      .hero {
-        padding: 64px 0;
-      }
-
-      .hero-content {
-        width: 100%;
-        padding: 0 31px;
-        gap: 12px;
-      }
-
-      /* Hero Image - Full Width on Mobile */
-      .inner-shadow {
-        border-radius: 0;
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-      }
-
-      .hero-title,
-      .hero-description {
-        width: 100%;
-      }
-
-      .h1 {
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: -0.78px;
-      }
-
-      .body-large {
-        font-size: 14px;
-        line-height: 21px;
-        letter-spacing: var(--letter-spacing-tight);
-      }
-
-      .hero-buttons {
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        gap: 8px;
-      }
-
-      .button {
-        font-size: 16px;
-        padding: 10px 16px;
-        white-space: nowrap;
-      }
-
-      /* Dashboard Section */
-      .dashboard-section {
-        padding: 64px 0;
-      }
-
-      .section-content {
-        gap: 48px;
-      }
-
-      .section-content>.h1 {
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: -0.78px;
-      }
-
-      .text-lg {
-        font-size: 14px;
-      }
-
-      .dashboard-grid {
-        gap: 24px;
-      }
-
-      .dashboard-visual {
-        width: 100vw;
-        height: 360px;
-        order: -1;
-        margin-left: calc(50% - 50vw);
-        border-radius: 0;
-      }
-
-      .dashboard-features {
-        gap: 36px;
-      }
-
-      .feature-item {
-        padding-bottom: 18px;
-      }
-
-      /* Search Section */
-      .search-section {
-        padding: 64px 0;
-      }
-
-      .search-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        margin-top: 48px;
-      }
-
-      .search-card {
-        gap: 16px;
-      }
-
-      .search-icon {
-        width: 48px;
-        height: 48px;
-      }
-
-      .search-card-content {
-        gap: 8px;
-      }
-
-      .search-visual-wrapper {
-        margin-top: 48px;
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        border-radius: 0;
-      }
-
-      .search-visual {
-        border-radius: 0;
-      }
-
-      /* Technology Section */
-      .technology-section {
-        padding: 64px 0;
-      }
-
-      .technology-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-
-      .technology-card {
-        border-radius: 0;
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-      }
-
-      .technology-visual {
-        height: 360px;
-      }
-
-      .technology-content {
-        padding: 24px;
-      }
-
-      .technology-content .h1 {
-        font-size: 28px;
-        line-height: 1.3;
-        letter-spacing: -1.5px;
-      }
-
-      .technology-content .text-base {
-        font-size: 14px;
-      }
-
-      /* Data Coverage Section */
-      .data-coverage-section {
-        padding: 64px 0;
-      }
-
-      .data-coverage-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-      }
-
-      .data-coverage-description {
-        margin-bottom: 48px;
-        font-size: 14px;
-      }
-
-      .accordion-title {
-        font-size: 20px;
-        line-height: 1.4;
-      }
-
-      .accordion-item {
-        padding: 12px 16px;
-      }
-
-      /* Pricing Section */
-      .pricing-section {
-        padding: 64px 0;
-      }
-
-      .pricing-grid {
-        margin-top: 48px;
-        gap: 32px;
-      }
-
-      .pricing-card {
-        padding: 24px;
-      }
-
-      .pricing-amount {
-        font-size: 38px;
-        line-height: 1;
-      }
-
-      /* Footer */
-      .footer {
-        padding: 48px 0 24px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        margin-bottom: 32px;
-      }
-    }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="mobile-menu-icon">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 7H21M3 12H21M3 17H21" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </div>
 
     <div class="logo-container">
+      <div class="mobile-menu-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 7H21M3 12H21M3 17H21" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
       <img src="img/scc-online-web-edition.png" alt="SCC Online Web Edition" class="logo-img">
     </div>
 
@@ -1292,8 +48,8 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="h1 hero-title">Powerful Legal Research, Anywhere You Need It</h1>
-      <p class="body-large hero-description text-secondary">
+      <h1 class="hero-title">Powerful Legal Research, Anywhere You Need It</h1>
+      <p class="hero-description">
         Combining trusted legal content with modern research tools, SCC Online® Web Edition helps legal professionals
         research with confidence, efficiency, and flexibility, wherever they work.
       </p>
@@ -1306,48 +62,45 @@
 
   <!-- Product Showcase -->
   <section>
-    <div class="container">
-      <img class="inner-shadow animate-on-scroll" src="img/web-edition-dashboard.jpg" alt="SCC Online Dashboard">
-    </div>
+    <img class="inner-shadow animate-on-scroll" src="img/web-edition-dashboard.jpg" alt="SCC Online Dashboard">
   </section>
 
   <!-- Dashboard Section -->
   <section class="dashboard-section">
     <div class="container">
+      <h2>One Dashboard.<br>Every Way to Discover the Law.</h2>
       <div class="section-content">
-        <h2>One Dashboard.<br>Every Way to Discover the Law.</h2>
         <div class="dashboard-grid">
+          <div class="dashboard-visual rounded-lg">
+            <img src="img/dashboard-search.jpg" alt="Search with Precision" class="active" data-index="0">
+            <img src="img/dashboard-browse.jpg" alt="Browse Like a Law Report" data-index="1">
+            <img src="img/dashboard-extend.jpg" alt="Extend Beyond Core Research" data-index="2">
+          </div>
           <div class="dashboard-features">
             <div class="feature-item active" data-index="0">
               <div class="title feature-title">Search with Precision</div>
-              <p class="text-secondary">
+              <p>
                 Use SmartSearch for semantic, concept-based discovery, run Boolean-powered keyword searches, or retrieve
                 exact documents by citation, party name, section, or topic.
               </p>
             </div>
             <div class="feature-item" data-index="1">
               <div class="title feature-title">Browse Like a Law Report</div>
-              <p class="text-secondary">
+              <p>
                 Move through judgments, legislation, and commentary sequentially, page by page and document by document,
                 replicating the experience of browsing a physical law report within a digital database.
               </p>
             </div>
             <div class="feature-item" data-index="2">
               <div class="title feature-title">Extend Beyond Core Research</div>
-              <p class="text-secondary">
+              <p>
                 Access professional tools, directories, and trusted partner resources directly from the dashboard to
                 support broader legal research.
               </p>
             </div>
           </div>
         </div>
-        <div class="dashboard-visual">
-          <img src="img/dashboard-search.jpg" alt="Search with Precision" class="active" data-index="0">
-          <img src="img/dashboard-browse.jpg" alt="Browse Like a Law Report" data-index="1">
-          <img src="img/dashboard-extend.jpg" alt="Extend Beyond Core Research" data-index="2">
-        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -1355,7 +108,7 @@
   <section class="search-section">
     <div class="container">
       <div class="section-content">
-        <h2 class="h1">Search Built for Legal Research</h2>
+        <h2>Search Built for Legal Research</h2>
         <div class="search-grid">
           <div class="search-card">
             <div class="search-icon">
@@ -1363,7 +116,7 @@
             </div>
             <div class="search-card-content">
               <h3 class="title-small">SmartSearch for Concept-Based Discovery</h3>
-              <p class="text-secondary">
+              <p>
                 SmartSearch recognises legal concepts and context, helping you discover relevant judgments and material
                 even when you do not know the exact words to search for.
               </p>
@@ -1375,7 +128,7 @@
             </div>
             <div class="search-card-content">
               <h3 class="title-small">Keyword Search with Boolean Control</h3>
-              <p class="  text-secondary">
+              <p>
                 Use classic keyword search with Boolean operators to structure queries precisely and maintain complete
                 control over how results are retrieved.
               </p>
@@ -1387,7 +140,7 @@
             </div>
             <div class="search-card-content">
               <h3 class="title-small">Refine and Retrieve with Precision</h3>
-              <p class="  text-secondary">
+              <p>
                 Narrow results using filters and sorting by date, court, party name, statute, or citation, so you can
                 quickly reach the exact document you need.
               </p>
@@ -1409,8 +162,8 @@
         <div class="technology-card">
           <div class="technology-content">
             <div class="eyebrow text-md text-tertiary">Authentic Replicas of Published Law Reports</div>
-            <h2 class="h1">Trueprint™ Technology</h2>
-            <p class="text-base">
+            <h2>Trueprint™ Technology</h2>
+            <p>
               Experience law reports exactly as they appear in print, with authentic page numbering and formatting.
               Maintain citation accuracy while enjoying the convenience of digital research.
             </p>
@@ -1424,8 +177,8 @@
         <div class="technology-card">
           <div class="technology-content">
             <div class="eyebrow text-md text-tertiary">Key Legal Principles, Clearly Explained</div>
-            <h2 class="h1">Digest Notes Database</h2>
-            <p class="text-base">
+            <h2>Digest Notes Database</h2>
+            <p>
               Digest Notes are prepared by SCC's team of legal experts, drawing from SCC and other leading law journals.
               Each note distils lengthy judgments into clearly articulated legal principles, highlights key points of
               law,
@@ -1444,67 +197,79 @@
   <section class="data-coverage-section">
     <div class="container">
       <div class="data-coverage-header">
-        <h2 class="h1">Data Coverage</h2>
+        <h2>Data Coverage</h2>
         <a href="#" class="button button-secondary">Download pdf</a>
       </div>
-      <div class="data-coverage-description text-lg">
+      <p>
         SCC Online® provides comprehensive coverage of Indian and international legal content, with databases updated
-        daily.<br>
-        Our content spans case law, legislation, and secondary materials, sourced through partnerships with leading
-        legal publishers.
-      </div>
+        daily. Our content spans case law, legislation, and secondary materials, sourced through partnerships with
+        leading legal publishers.
+      </p>
       <div class="accordion-group">
         <div class="accordion-item">
           <div class="accordion-header">
             <h3 class="accordion-title">Indian Case Law</h3>
+            <div class="accordion-icon">
+              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            </div>
           </div>
-          <div class="accordion-icon">
-            <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
-          </div>
-          Supreme Court of India
-          Covers the judgments of the Supreme Court of India (1950 till date). Contains the Supreme Court CasesTM (1950
-          - till date with TruePrintTM), Company Cases (Comp Cas), Company Cases-OL (Comp Cas-OL), Goods & Service Tax
-          Reports (GSTR), Goods & Service Tax Reports-OL (GSTR-OL), Income Tax Reports (ITR), Income Tax Reports-OL
-          (ITR-OL), Sales Tax Cases (STC), VAT and Service Tax Cases (VST) (with TruePrintTM) [available for an extra
-          charge as an add-on].
+          <div class="accordion-content">
+            <p class="title text-secondary">Supreme Court of India</p>
+            <p>
+              Covers the judgments of the Supreme Court of India (1950 till date). Contains the Supreme Court
+              CasesTM (1950
+              - till date with TruePrintTM), Company Cases (Comp Cas), Company Cases-OL (Comp Cas-OL), Goods & Service
+              Tax
+              Reports (GSTR), Goods & Service Tax Reports-OL (GSTR-OL), Income Tax Reports (ITR), Income Tax Reports-OL
+              (ITR-OL), Sales Tax Cases (STC), VAT and Service Tax Cases (VST) (with TruePrintTM) [available for an
+              extra
+              charge as an add-on].
+            </p>
 
-          Also contains the full text of unedited judgments from inception of the Court till date. These are replaced as
-          and when they are published in SCC. In addition, casenotes, judgments and orders since 1950 to till 1969 are
-          also available. Casenotes contain cross-citations to most other standard law reports such as ITR, GSTR, STC,
-          VST, Comp Cas, AIR, ELT, AIC, LLN, LLJ, SLR, FLR etc.
+            <p>
+              Also contains the full text of unedited judgments from inception of the Court till date. These are
+              replaced
+              as
+              and when they are published in SCC. In addition, casenotes, judgments and orders since 1950 to till 1969
+              are
+              also available. Casenotes contain cross-citations to most other standard law reports such as ITR, GSTR,
+              STC,
+              VST, Comp Cas, AIR, ELT, AIC, LLN, LLJ, SLR, FLR etc.
+            </p>
+          </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">
             <h3 class="accordion-title">Indian Legislation (Primary & Secondary Legislation)</h3>
-          </div>
-          <div class="accordion-icon">
-            <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            <div class="accordion-icon">
+              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">
             <h3 class="accordion-title">Indian Secondary Materials</h3>
-          </div>
-          <div class="accordion-icon">
-            <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            <div class="accordion-icon">
+              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">
             <h3 class="accordion-title">Foreign Materials</h3>
             <span class="accordion-badge">Available with Platinum Plus</span>
-          </div>
-          <div class="accordion-icon">
-            <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            <div class="accordion-icon">
+              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">
             <h3 class="accordion-title">International Materials</h3>
             <span class="accordion-badge">Available with Platinum Plus</span>
-          </div>
-          <div class="accordion-icon">
-            <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            <div class="accordion-icon">
+              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -1515,7 +280,7 @@
   <section class="pricing-section" id="pricing">
     <div class="container">
       <div class="section-content">
-        <h2 class="h1">Pricing and Plans</h2>
+        <h2>Pricing and Plans</h2>
         <div class="pricing-grid">
           <div class="pricing-card">
             <div class="eyebrow">Standard</div>
@@ -1680,6 +445,22 @@
     // Add stagger effect to pricing cards
     document.querySelectorAll('.pricing-card').forEach((card, index) => {
       card.style.animationDelay = `${index * 0.15}s`;
+    });
+
+    // Accordion functionality
+    document.querySelectorAll('.accordion-item').forEach((item) => {
+      item.addEventListener('click', () => {
+        // Toggle active class
+        const isActive = item.classList.contains('active');
+
+        // Close all accordions
+        document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+
+        // If it wasn't active, open it
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
     });
   </script>
 
