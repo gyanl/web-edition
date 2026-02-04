@@ -40,8 +40,8 @@
     </nav>
 
     <div class="header-actions">
-      <a href="#cart" class="header-cart">Cart</a>
-      <a href="#login" class="header-login">Log In</a>
+      <a href="#cart" class="button button-ghost">Cart</a>
+      <a href="#login" class="button button-secondary">Log In</a>
     </div>
   </header>
 
@@ -68,7 +68,7 @@
   <!-- Dashboard Section -->
   <section class="dashboard-section">
     <div class="container">
-      <h2>One Dashboard.<br>Every Way to Discover the Law.</h2>
+      <h2 class="pb-xl">One Dashboard.<br>Every Way to Discover the Law.</h2>
       <div class="section-content">
         <div class="dashboard-grid">
           <div class="dashboard-visual rounded-lg">
@@ -161,7 +161,7 @@
         <!-- Trueprint Technology Card -->
         <div class="technology-card">
           <div class="technology-content">
-            <div class="eyebrow text-md text-tertiary">Authentic Replicas of Published Law Reports</div>
+            <div class="eyebrow text-md text-accent">Authentic Replicas of Published Law Reports</div>
             <h2>Trueprint™ Technology</h2>
             <p>
               Experience law reports exactly as they appear in print, with authentic page numbering and formatting.
@@ -176,7 +176,7 @@
         <!-- Digest Notes Database Card -->
         <div class="technology-card">
           <div class="technology-content">
-            <div class="eyebrow text-md text-tertiary">Key Legal Principles, Clearly Explained</div>
+            <div class="eyebrow text-md text-accent">Key Legal Principles, Clearly Explained</div>
             <h2>Digest Notes Database</h2>
             <p>
               Digest Notes are prepared by SCC's team of legal experts, drawing from SCC and other leading law journals.
@@ -193,12 +193,68 @@
     </div>
   </section>
 
+  <!-- Pricing Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-content">
+        <h2>Pricing and Plans</h2>
+        <p class="pricing-description">Choose a plan based on the depth and breadth of legal content you need.</p>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="title text-accent">Platinum</div>
+              <div class="pricing-plan-subtitle">For Core Indian legal Research</div>
+            </div>
+            <div class="pricing-amount">₹22,000</div>
+            <div class="pricing-period">/ user / year</div>
+            <div class="pricing-gst">+ 18% GST</div>
+            <ul class="pricing-features">
+              <li>320+ Databases covered</li>
+              <li>Indian Case Law (SC, HCs, Tribunals, Historical Courts)</li>
+              <li>Indian Statutory Law & Debates</li>
+              <li>Reports & Committee findings</li>
+              <li>Articles from 40+ top legal journals</li>
+            </ul>
+            <div class="pricing-buttons">
+              <a href="#" class="button button-primary">Add to Cart</a>
+              <a href="#data-coverage" class="button button-secondary">Data Coverage</a>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="title text-accent">Platinum Plus</div>
+              <div class="pricing-plan-subtitle">For advanced and international research</div>
+            </div>
+            <div class="pricing-amount">₹48,000</div>
+            <div class="pricing-period">/ user / year</div>
+            <div class="pricing-gst">+ 18% GST</div>
+            <ul class="pricing-features">
+              <li>400+ Databases covered</li>
+              <li>Indian Case Law (SC, HCs, Tribunals, Historical Courts)</li>
+              <li>Indian Statutory Law & Debates</li>
+              <li>Reports & Committee findings</li>
+              <li>Articles from 40+ top legal journals</li>
+              <li>23 Foreign Court Judgments</li>
+              <li>English Law via ICLR UK (Law Reports, WLR, BLR)</li>
+              <li>Singapore Law (LawNet)</li>
+              <li>Human Rights, IP, and Arbitration materials</li>
+            </ul>
+            <div class="pricing-buttons">
+              <a href="#" class="button button-primary">Add to Cart</a>
+              <a href="#data-coverage" class="button button-secondary">Data Coverage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Data Coverage Section -->
-  <section class="data-coverage-section">
+  <section class="data-coverage-section" id="data-coverage">
     <div class="container">
       <div class="data-coverage-header">
         <h2>Data Coverage</h2>
-        <a href="#" class="button button-secondary">Download pdf</a>
+        <a class="button button-secondary">Download PDF</a>
       </div>
       <p>
         SCC Online® provides comprehensive coverage of Indian and international legal content, with databases updated
@@ -210,7 +266,7 @@
           <div class="accordion-header">
             <h3 class="accordion-title">Indian Case Law</h3>
             <div class="accordion-icon">
-              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+              <img src="img/CaretDown.svg" alt="">
             </div>
           </div>
           <div class="accordion-content">
@@ -242,7 +298,7 @@
           <div class="accordion-header">
             <h3 class="accordion-title">Indian Legislation (Primary & Secondary Legislation)</h3>
             <div class="accordion-icon">
-              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+              <img src="img/CaretDown.svg" alt="">
             </div>
           </div>
         </div>
@@ -250,7 +306,7 @@
           <div class="accordion-header">
             <h3 class="accordion-title">Indian Secondary Materials</h3>
             <div class="accordion-icon">
-              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+              <img src="img/CaretDown.svg" alt="">
             </div>
           </div>
         </div>
@@ -259,7 +315,7 @@
             <h3 class="accordion-title">Foreign Materials</h3>
             <span class="accordion-badge">Available with Platinum Plus</span>
             <div class="accordion-icon">
-              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+              <img src="img/CaretDown.svg" alt="">
             </div>
           </div>
         </div>
@@ -268,48 +324,8 @@
             <h3 class="accordion-title">International Materials</h3>
             <span class="accordion-badge">Available with Platinum Plus</span>
             <div class="accordion-icon">
-              <img src="http://localhost:3845/assets/8c6becbfcc27d92527ba3d7002ae5da9416dffab.svg" alt="">
+              <img src="img/CaretDown.svg" alt="">
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="pricing-section" id="pricing">
-    <div class="container">
-      <div class="section-content">
-        <h2>Pricing and Plans</h2>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="eyebrow">Standard</div>
-            <div class="pricing-amount">₹35,000</div>
-            <div class="pricing-period">per user / year</div>
-            <ul class="pricing-features">
-              <li>Full access to Supreme Court & High Court judgments</li>
-              <li>Central & State legislation</li>
-              <li>SmartSearch powered research</li>
-              <li>Case citator and legal analytics</li>
-              <li>Digital notes and annotations</li>
-              <li>Email support</li>
-            </ul>
-            <a href="#" class="button button-primary" style="width: 100%; justify-content: center;">Get Started</a>
-          </div>
-          <div class="pricing-card">
-            <div class="eyebrow">Premium</div>
-            <div class="pricing-amount">₹50,000</div>
-            <div class="pricing-period">per user / year</div>
-            <ul class="pricing-features">
-              <li>Everything in Standard</li>
-              <li>International case law & treaties</li>
-              <li>Legal journals and commentary</li>
-              <li>Advanced legal analytics</li>
-              <li>Priority support</li>
-              <li>Team collaboration tools</li>
-              <li>API access</li>
-            </ul>
-            <a href="#" class="button button-primary" style="width: 100%; justify-content: center;">Get Started</a>
           </div>
         </div>
       </div>
@@ -321,32 +337,51 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-column">
-          <h4>SCC Online</h4>
+          <img src="img/scc-online-white.png" alt="">
           <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px; margin-top: 16px;">
             The Surest Way to Legal Research™<br>
             India's leading legal research platform
           </p>
-        </div>
-        <div class="footer-column">
-          <h4>Products</h4>
           <ul class="footer-links">
-            <li><a href="#">Web Edition</a></li>
-            <li><a href="#">Tax Edition</a></li>
-            <li><a href="#">Corporate Edition</a></li>
-            <li><a href="#">AI Pro</a></li>
+            <li><a href="#">
+                Need help?
+
+                <p>Toll free helpline: 1800-258-6310</p>
+                <p>Mon - Sat, 10:00 am to 6:00 pm</p>
+
+                <p>0120 6357 900</p>
+
+                <p>support@scconline.com</p>
+
+                6-C, Sector 40-41, Ecotech-1, Greater Noida - 201310, India
+              </a></li>
           </ul>
         </div>
         <div class="footer-column">
-          <h4>Resources</h4>
+          <h4>Digital Products</h4>
           <ul class="footer-links">
-            <li><a href="#">SCC Times</a></li>
-            <li><a href="#">Legal Updates</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Training</a></li>
+            <li><a href="#">SCC Online® Web Edition</a></li>
+            <li><a href="#">SCC Online® Tax Edition</a></li>
+            <li><a href="#">SCC Online® Corporate Edition</a></li>
+            <li><a href="#">SCC Online® AI Pro</a></li>
+            <li><a href="#">SCC Online® Case Finder</a></li>
           </ul>
         </div>
+
         <div class="footer-column">
-          <h4>Company</h4>
+          <h4>Journals</h4>
+          <ul class="footer-links">
+            <li><a href="#">Supreme Court Cases</a></li>
+            <li><a href="#">Company Cases</a></li>
+            <li><a href="#">Income Tax Reports</a></li>
+            <li><a href="#">Goods & Service Tax Reports</a></li>
+            <li><a href="#">Law Report</a></li>
+            <li><a href="#">The Practical Lawyer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>More</h4>
           <ul class="footer-links">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
@@ -355,6 +390,9 @@
           </ul>
         </div>
       </div>
+
+      Subscribe to SCC Times
+
       <div class="footer-bottom">
         <p>&copy; 2026 Eastern Book Company. All rights reserved.</p>
       </div>
@@ -385,9 +423,9 @@
       switchFeature(nextIndex);
     }
 
-    // Auto-rotate every 7 seconds
+    // Auto-rotate every 5 seconds
     function startAutoRotate() {
-      interval = setInterval(nextFeature, 7000);
+      interval = setInterval(nextFeature, 5000);
     }
 
     function resetAutoRotate() {
