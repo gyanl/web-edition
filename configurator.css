@@ -1,0 +1,219 @@
+/* Configurator Component */
+#configurator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-width: 280px;
+  max-width: 320px;
+  display: none;
+}
+
+#configurator.visible {
+  display: block;
+}
+
+#configurator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #1a1a1a;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+#configurator-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#configurator-toggle {
+  color: #888;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+#configurator.collapsed #configurator-toggle {
+  transform: rotate(180deg);
+}
+
+#configurator-content {
+  padding: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+#configurator.collapsed #configurator-content {
+  max-height: 0;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.config-group {
+  margin-bottom: 20px;
+}
+
+.config-group:last-child {
+  margin-bottom: 0;
+}
+
+.config-label {
+  display: block;
+  color: #e0e0e0;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.config-input {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #444;
+  outline: none;
+}
+
+.config-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #A600FF;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.config-input::-webkit-slider-thumb:hover {
+  background: #C44DFF;
+}
+
+.config-input::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #A600FF;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.config-input::-moz-range-thumb:hover {
+  background: #C44DFF;
+}
+
+.config-value {
+  display: inline-block;
+  color: #A600FF;
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 8px;
+  font-family: 'Monaco', monospace;
+}
+
+.config-color-input {
+  width: 40px;
+  height: 32px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.config-color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.config-color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+.config-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.config-section-title {
+  color: #888;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin: 16px 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333;
+}
+
+.config-section-title:first-child {
+  margin-top: 0;
+}
+
+.config-subsection-title {
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+/* Scrollbar styling */
+#configurator-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+#configurator-content::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 0 0 8px 0;
+}
+
+#configurator-content::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+#configurator-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Copy button */
+.config-copy-btn {
+  width: 100%;
+  background: #A600FF;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+}
+
+.config-copy-btn:hover {
+  background: #C44DFF;
+}
+
+.config-copy-btn:active {
+  transform: translateY(1px);
+}

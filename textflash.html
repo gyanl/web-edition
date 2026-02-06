@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Flash Animation</title>
+  <style>
+    :root {
+      --color-1: #101419;
+      --color-2: #6B8FBF;
+      --color-3: #6CB5EB;
+      --color-4: #6CB5EB;
+      --color-5: #80ACFF;
+      --color-6: #99A8C7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 300;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .text-container {
+      text-align: center;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      color: #101419;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg,
+          var(--color-1) 0,
+          var(--color-1) 33.33%,
+          var(--color-2) 40%,
+          var(--color-3) 45%,
+          var(--color-4) 50%,
+          var(--color-5) 55%,
+          var(--color-6) 60%,
+          transparent 66.67%,
+          transparent);
+      background-size: 300% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 3s cubic-bezier(0.7, 0, 0.3, 1) infinite;
+    }
+
+    @keyframes gradientShift {
+
+      0%,
+      10% {
+        background: #101419;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #101419;
+      }
+
+      15% {
+        background: linear-gradient(90deg,
+            var(--color-1) 0,
+            var(--color-1) 33.33%,
+            var(--color-2) 40%,
+            var(--color-3) 45%,
+            var(--color-4) 50%,
+            var(--color-5) 55%,
+            var(--color-6) 60%,
+            transparent 66.67%,
+            transparent);
+        background-size: 300% 100%;
+        background-position: 100% 0;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      68.33% {
+        background-position: 0 0;
+      }
+
+      83.33%,
+      100% {
+        background: #101419;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #101419;
+      }
+    }
+
+    /* Controls UI */
+    .controls {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      border-radius: 100px;
+      display: flex;
+      gap: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      z-index: 100;
+    }
+
+    .copy-btn {
+      background: #101419;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-left: 8px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .copy-btn:hover {
+      background: #000;
+      transform: translateY(-1px);
+    }
+
+    .copy-btn:active {
+      transform: translateY(0);
+    }
+
+    .color-picker-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .color-picker-item input[type="color"] {
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: none;
+      overflow: hidden;
+    }
+
+    .color-picker-item input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    .color-picker-item input[type="color"]::-webkit-color-swatch {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+    }
+
+    .color-label {
+      font-size: 10px;
+      font-weight: 500;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .controls {
+        bottom: 20px;
+        gap: 8px;
+        padding: 8px 16px;
+      }
+
+      .color-picker-item input[type="color"] {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-container">
+    <h1>
+      Never start from a <span class="gradient-text">blank slide</span> again.
+    </h1>
+  </div>
+
+  <div class="controls">
+    <div class="color-picker-item">
+      <input type="color" id="color-1" value="#101419">
+      <span class="color-label">1</span>
+    </div>
+    <div class="color-picker-item">
+      <input type="color" id="color-2" value="#6B8FBF">
+      <span class="color-label">2</span>
+    </div>
+    <div class="color-picker-item">
+      <input type="color" id="color-3" value="#6CB5EB">
+      <span class="color-label">3</span>
+    </div>
+    <div class="color-picker-item">
+      <input type="color" id="color-4" value="#B3C6FF">
+      <span class="color-label">4</span>
+    </div>
+    <div class="color-picker-item">
+      <input type="color" id="color-5" value="#99A8C7">
+      <span class="color-label">5</span>
+    </div>
+    <div class="color-picker-item">
+      <input type="color" id="color-6" value="#80ACFF">
+      <span class="color-label">6</span>
+    </div>
+    <button class="copy-btn" id="copy-btn">Copy Config</button>
+  </div>
+
+  <script>
+    const pickers = document.querySelectorAll('input[type="color"]');
+    pickers.forEach(picker => {
+      picker.addEventListener('input', (e) => {
+        const id = e.target.id;
+        const color = e.target.value;
+        document.documentElement.style.setProperty(`--${id}`, color);
+
+        // Restart animation if needed to see changes clearly
+        const text = document.querySelector('.gradient-text');
+        text.style.animation = 'none';
+        text.offsetHeight; // Trigger reflow
+        text.style.animation = null;
+      });
+    });
+
+    const copyBtn = document.getElementById('copy-btn');
+    copyBtn.addEventListener('click', () => {
+      let config = '';
+      pickers.forEach((picker, index) => {
+        config += `      --color-${index + 1}: ${picker.value};\n`;
+      });
+
+      navigator.clipboard.writeText(config).then(() => {
+        const originalText = copyBtn.innerText;
+        copyBtn.innerText = 'Copied!';
+        copyBtn.style.background = '#00C853';
+        setTimeout(() => {
+          copyBtn.innerText = originalText;
+          copyBtn.style.background = '';
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+
+</html>
