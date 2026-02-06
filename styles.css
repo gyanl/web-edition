@@ -1357,6 +1357,93 @@ h2 {
   align-items: center;
 }
 
+/* App Download Section (Mobile Only) */
+.app-download-section {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #FFFFFF;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-download-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.app-download-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.app-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #F3F4F6;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.app-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.app-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #101419;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
+}
+
+.app-subtitle {
+  font-size: 12px;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-download-button {
+  flex-shrink: 0;
+  padding: 8px 20px !important;
+  font-size: 14px !important;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .app-download-section {
+    display: block;
+  }
+
+  /* Add padding to body to prevent content from being hidden behind the banner */
+  body {
+    padding-bottom: 80px;
+  }
+}
+
 /* Footer */
 .footer {
   padding: 64px 0 32px;
@@ -1807,6 +1894,9 @@ h2 {
   width: 64px;
   height: 64px;
   animation: starBounce 3s ease-in-out infinite;
+  shape-rendering: geometricPrecision;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 @keyframes starBounce {
