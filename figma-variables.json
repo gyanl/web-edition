@@ -1,0 +1,1304 @@
+[
+  {
+    "SCC Online | Base Tokens": {
+      "modes": {
+        "Default": {
+          "colors": {
+            "gray": {
+              "50": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F9FAFB",
+                "$description": "Tailwind Gray 50",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-50)"
+                }
+              },
+              "100": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F3F4F6",
+                "$description": "Tailwind Gray 100",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-100)"
+                }
+              },
+              "200": {
+                "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+                "$type": "color",
+                "$value": "#E5E7EB",
+                "$description": "Tailwind Gray 200",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-200)"
+                }
+              },
+              "300": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#D1D5DB",
+                "$description": "Tailwind Gray 300",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-300)"
+                }
+              },
+              "400": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#9CA3AF",
+                "$description": "Tailwind Gray 400",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-400)"
+                }
+              },
+              "500": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#6B7280",
+                "$description": "Tailwind Gray 500",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-500)"
+                }
+              },
+              "600": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#4B5563",
+                "$description": "Tailwind Gray 600",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-600)"
+                }
+              },
+              "700": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#374151",
+                "$description": "Tailwind Gray 700",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-700)"
+                }
+              },
+              "800": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#1F2937",
+                "$description": "Tailwind Gray 800",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-800)"
+                }
+              },
+              "900": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#111827",
+                "$description": "Tailwind Gray 900",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-900)"
+                }
+              },
+              "950": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#030712",
+                "$description": "Tailwind Gray 950",
+                "$codeSyntax": {
+                  "WEB": "var(--gray-950)"
+                }
+              }
+            },
+            "maroon": {
+              "50": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#FEF2F5",
+                "$description": "SCC Maroon 50",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-50)"
+                }
+              },
+              "100": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#FCE4EB",
+                "$description": "SCC Maroon 100",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-100)"
+                }
+              },
+              "200": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F8C4D2",
+                "$description": "SCC Maroon 200",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-200)"
+                }
+              },
+              "300": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F195AE",
+                "$description": "SCC Maroon 300",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-300)"
+                }
+              },
+              "400": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#E85E82",
+                "$description": "SCC Maroon 400",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-400)"
+                }
+              },
+              "500": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#D8335E",
+                "$description": "SCC Maroon 500",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-500)"
+                }
+              },
+              "600": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#C41849",
+                "$description": "SCC Maroon 600",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-600)"
+                }
+              },
+              "700": {
+                "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+                "$type": "color",
+                "$value": "#A3143D",
+                "$description": "SCC Maroon 700 - Primary brand color",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-700)"
+                }
+              },
+              "800": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#710C23",
+                "$description": "SCC Maroon 800",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-800)"
+                }
+              },
+              "900": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#5A0718",
+                "$description": "SCC Maroon 900",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-900)"
+                }
+              },
+              "950": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#3D050F",
+                "$description": "SCC Maroon 950",
+                "$codeSyntax": {
+                  "WEB": "var(--maroon-950)"
+                }
+              }
+            },
+            "red": {
+              "50": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#FEF2F0",
+                "$description": "SCC Red 50",
+                "$codeSyntax": {
+                  "WEB": "var(--red-50)"
+                }
+              },
+              "100": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#FDE3DE",
+                "$description": "SCC Red 100",
+                "$codeSyntax": {
+                  "WEB": "var(--red-100)"
+                }
+              },
+              "200": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#FBC5BD",
+                "$description": "SCC Red 200",
+                "$codeSyntax": {
+                  "WEB": "var(--red-200)"
+                }
+              },
+              "300": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F7968C",
+                "$description": "SCC Red 300",
+                "$codeSyntax": {
+                  "WEB": "var(--red-300)"
+                }
+              },
+              "400": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F47560",
+                "$description": "SCC Red 400",
+                "$codeSyntax": {
+                  "WEB": "var(--red-400)"
+                }
+              },
+              "500": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F04E3D",
+                "$description": "SCC Red 500",
+                "$codeSyntax": {
+                  "WEB": "var(--red-500)"
+                }
+              },
+              "600": {
+                "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+                "$type": "color",
+                "$value": "#EF2D19",
+                "$description": "SCC Red 600 - Secondary accent color",
+                "$codeSyntax": {
+                  "WEB": "var(--red-600)"
+                }
+              },
+              "700": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#B91C1C",
+                "$description": "SCC Red 700",
+                "$codeSyntax": {
+                  "WEB": "var(--red-700)"
+                }
+              },
+              "800": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#991B1B",
+                "$description": "SCC Red 800",
+                "$codeSyntax": {
+                  "WEB": "var(--red-800)"
+                }
+              },
+              "900": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#7F1D1D",
+                "$description": "SCC Red 900",
+                "$codeSyntax": {
+                  "WEB": "var(--red-900)"
+                }
+              },
+              "950": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#450A05",
+                "$description": "SCC Red 950",
+                "$codeSyntax": {
+                  "WEB": "var(--red-950)"
+                }
+              }
+            },
+            "purple": {
+              "50": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#FAF2FF",
+                "$description": "AI Purple 50",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-50)"
+                }
+              },
+              "100": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#F5E6FF",
+                "$description": "AI Purple 100",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-100)"
+                }
+              },
+              "200": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#EBCCFF",
+                "$description": "AI Purple 200",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-200)"
+                }
+              },
+              "300": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#DD99FF",
+                "$description": "AI Purple 300",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-300)"
+                }
+              },
+              "400": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#CC66FF",
+                "$description": "AI Purple 400",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-400)"
+                }
+              },
+              "500": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#B933FF",
+                "$description": "AI Purple 500",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-500)"
+                }
+              },
+              "600": {
+                "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+                "$type": "color",
+                "$value": "#A600FF",
+                "$description": "AI Purple 600 - AI Pro brand color",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-600)"
+                }
+              },
+              "700": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#9900D9",
+                "$description": "AI Purple 700",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-700)"
+                }
+              },
+              "800": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#7A00AD",
+                "$description": "AI Purple 800",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-800)"
+                }
+              },
+              "900": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#590080",
+                "$description": "AI Purple 900",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-900)"
+                }
+              },
+              "950": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#3D0059",
+                "$description": "AI Purple 950",
+                "$codeSyntax": {
+                  "WEB": "var(--purple-950)"
+                }
+              }
+            },
+            "neutral": {
+              "white": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "white"
+              },
+              "black": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "black"
+              }
+            }
+          },
+          "spacing": {
+            "1": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 4,
+              "$description": "4px - Tailwind space-1",
+              "$codeSyntax": {
+                "WEB": "var(--space-1)"
+              }
+            },
+            "2": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 8,
+              "$description": "8px - Tailwind space-2",
+              "$codeSyntax": {
+                "WEB": "var(--space-2)"
+              }
+            },
+            "4": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 16,
+              "$description": "16px - Tailwind space-4",
+              "$codeSyntax": {
+                "WEB": "var(--space-4)"
+              }
+            },
+            "6": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 24,
+              "$description": "24px - Tailwind space-6",
+              "$codeSyntax": {
+                "WEB": "var(--space-6)"
+              }
+            },
+            "8": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 32,
+              "$description": "32px - Tailwind space-8",
+              "$codeSyntax": {
+                "WEB": "var(--space-8)"
+              }
+            },
+            "12": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 48,
+              "$description": "48px - Tailwind space-12",
+              "$codeSyntax": {
+                "WEB": "var(--space-12)"
+              }
+            },
+            "16": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 64,
+              "$description": "64px - Tailwind space-16",
+              "$codeSyntax": {
+                "WEB": "var(--space-16)"
+              }
+            },
+            "20": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 80,
+              "$description": "80px - Tailwind space-20",
+              "$codeSyntax": {
+                "WEB": "var(--space-20)"
+              }
+            },
+            "30": {
+              "$scopes": ["GAP", "WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 120,
+              "$description": "120px - Custom spacing value",
+              "$codeSyntax": {
+                "WEB": "var(--space-30)"
+              }
+            }
+          },
+          "radius": {
+            "sm": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 2,
+              "$description": "Tailwind rounded-sm",
+              "$codeSyntax": {
+                "WEB": "var(--rounded-sm)"
+              }
+            },
+            "default": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 4,
+              "$description": "Tailwind rounded",
+              "$codeSyntax": {
+                "WEB": "var(--rounded)"
+              }
+            },
+            "lg": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 8,
+              "$description": "Tailwind rounded-lg",
+              "$codeSyntax": {
+                "WEB": "var(--rounded-lg)"
+              }
+            },
+            "xl": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 12,
+              "$description": "Tailwind rounded-xl",
+              "$codeSyntax": {
+                "WEB": "var(--rounded-xl)"
+              }
+            },
+            "2xl": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 16,
+              "$description": "Tailwind rounded-2xl",
+              "$codeSyntax": {
+                "WEB": "var(--rounded-2xl)"
+              }
+            },
+            "full": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 9999,
+              "$description": "Full radius for circular elements"
+            }
+          },
+          "typography": {
+            "font-family": {
+              "serif": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$value": "Besley",
+                "$description": "Serif font for headings (H1-H4)",
+                "$codeSyntax": {
+                  "WEB": "var(--font-serif)"
+                }
+              },
+              "sans": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$value": "TASA Orbiter",
+                "$description": "Sans-serif font for body text and UI",
+                "$codeSyntax": {
+                  "WEB": "var(--font-sans)"
+                }
+              }
+            },
+            "font-size": {
+              "xs": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 12,
+                "$description": "Tailwind text-xs",
+                "$codeSyntax": {
+                  "WEB": "var(--text-xs)"
+                }
+              },
+              "sm": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 14,
+                "$description": "Tailwind text-sm",
+                "$codeSyntax": {
+                  "WEB": "var(--text-sm)"
+                }
+              },
+              "base": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 16,
+                "$description": "Tailwind text-base",
+                "$codeSyntax": {
+                  "WEB": "var(--text-base)"
+                }
+              },
+              "lg": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 18,
+                "$description": "Tailwind text-lg",
+                "$codeSyntax": {
+                  "WEB": "var(--text-lg)"
+                }
+              },
+              "xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 20,
+                "$description": "Tailwind text-xl",
+                "$codeSyntax": {
+                  "WEB": "var(--text-xl)"
+                }
+              },
+              "2xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 24,
+                "$description": "Tailwind text-2xl",
+                "$codeSyntax": {
+                  "WEB": "var(--text-2xl)"
+                }
+              },
+              "3xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 30,
+                "$description": "Tailwind text-3xl",
+                "$codeSyntax": {
+                  "WEB": "var(--text-3xl)"
+                }
+              },
+              "4xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 36,
+                "$description": "Tailwind text-4xl",
+                "$codeSyntax": {
+                  "WEB": "var(--text-4xl)"
+                }
+              },
+              "5xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 48,
+                "$description": "Tailwind text-5xl",
+                "$codeSyntax": {
+                  "WEB": "var(--text-5xl)"
+                }
+              }
+            },
+            "font-weight": {
+              "normal": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 400,
+                "$description": "Normal weight - body text"
+              },
+              "medium": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 500,
+                "$description": "Medium weight - headings H1-H4, buttons"
+              },
+              "semibold": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 600,
+                "$description": "Semibold weight - headings H5-H6"
+              },
+              "bold": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 700,
+                "$description": "Bold weight"
+              }
+            },
+            "line-height": {
+              "tightest": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1,
+                "$description": "Line height 1 - pricing amounts, numbers"
+              },
+              "tighter": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.1,
+                "$description": "Line height 1.1 - H1/H2 desktop"
+              },
+              "tight": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.2,
+                "$description": "Line height 1.2 - H1/H2 mobile, edition titles"
+              },
+              "snug": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.25,
+                "$description": "Line height 1.25 - .title, .title-small"
+              },
+              "normal": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.3,
+                "$description": "Line height 1.3 - H3"
+              },
+              "relaxed": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.4,
+                "$description": "Line height 1.4 - H4, H5, blog titles, subtitles"
+              },
+              "loose": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.5,
+                "$description": "Line height 1.5 - H6, body, paragraphs"
+              },
+              "looser": {
+                "$scopes": ["LINE_HEIGHT"],
+                "$type": "float",
+                "$value": 1.6,
+                "$description": "Line height 1.6 - blog excerpts, descriptions"
+              }
+            },
+            "letter-spacing": {
+              "tight": {
+                "$scopes": ["LETTER_SPACING"],
+                "$type": "float",
+                "$value": -0.02,
+                "$description": "-0.02em - All headings (--tracking-tight)",
+                "$codeSyntax": {
+                  "WEB": "var(--tracking-tight)"
+                }
+              },
+              "slightly-tight": {
+                "$scopes": ["LETTER_SPACING"],
+                "$type": "float",
+                "$value": -0.01,
+                "$description": "-0.01em - .title, .title-small (--tracking-slightly-tight)",
+                "$codeSyntax": {
+                  "WEB": "var(--tracking-slightly-tight)"
+                }
+              },
+              "wide": {
+                "$scopes": ["LETTER_SPACING"],
+                "$type": "float",
+                "$value": 0.01,
+                "$description": "0.01em (--tracking-wide)",
+                "$codeSyntax": {
+                  "WEB": "var(--tracking-wide)"
+                }
+              },
+              "wider": {
+                "$scopes": ["LETTER_SPACING"],
+                "$type": "float",
+                "$value": 0.05,
+                "$description": "0.05em - eyebrows, badges, edition titles"
+              }
+            }
+          },
+          "layout": {
+            "container-7xl": {
+              "$scopes": ["WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 1280,
+              "$description": "Max container width - Tailwind max-w-7xl",
+              "$codeSyntax": {
+                "WEB": "var(--container-7xl)"
+              }
+            },
+            "container-6xl": {
+              "$scopes": ["WIDTH_HEIGHT"],
+              "$type": "float",
+              "$value": 1152,
+              "$description": "Narrower content areas - Tailwind max-w-6xl",
+              "$codeSyntax": {
+                "WEB": "var(--container-6xl)"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "SCC Online | Component Aliases": {
+      "modes": {
+        "Default": {
+          "button": {
+            "primary": {
+              "background": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.maroon.700}",
+                "$description": "Primary button background"
+              },
+              "background-hover": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.maroon.800}",
+                "$description": "Primary button hover background"
+              },
+              "text": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.neutral.white}",
+                "$description": "Primary button text color"
+              },
+              "radius": {
+                "$scopes": ["CORNER_RADIUS"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{radius.lg}",
+                "$description": "Button border radius - 8px"
+              },
+              "font-size": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.base}",
+                "$description": "Button font size - 16px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.medium}",
+                "$description": "Button font weight - 500"
+              },
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.sans}",
+                "$description": "Button font family"
+              },
+              "padding-y": {
+                "$scopes": ["GAP"],
+                "$type": "float",
+                "$value": 10,
+                "$description": "Button vertical padding - 10px"
+              },
+              "padding-x": {
+                "$scopes": ["GAP"],
+                "$type": "float",
+                "$value": 20,
+                "$description": "Button horizontal padding - 20px"
+              }
+            },
+            "secondary": {
+              "background": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.50}",
+                "$description": "Secondary button background"
+              },
+              "background-hover": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.200}",
+                "$description": "Secondary button hover background"
+              },
+              "text": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.900}",
+                "$description": "Secondary button text color"
+              },
+              "border": {
+                "$scopes": ["STROKE_COLOR"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.200}",
+                "$description": "Secondary button border"
+              }
+            },
+            "ghost": {
+              "background": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "transparent",
+                "$description": "Ghost button background"
+              },
+              "text": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.700}",
+                "$description": "Ghost button text color"
+              },
+              "border": {
+                "$scopes": ["STROKE_COLOR"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.200}",
+                "$description": "Ghost button border"
+              }
+            },
+            "dark": {
+              "background": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.800}",
+                "$description": "Dark button background"
+              },
+              "background-hover": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.gray.950}",
+                "$description": "Dark button hover background"
+              },
+              "text": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{colors.neutral.white}",
+                "$description": "Dark button text color"
+              }
+            }
+          },
+          "card": {
+            "background": {
+              "$scopes": ["ALL_FILLS"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.neutral.white}",
+              "$description": "Card background"
+            },
+            "border": {
+              "$scopes": ["STROKE_COLOR"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.gray.200}",
+              "$description": "Card border color"
+            },
+            "radius": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{radius.lg}",
+              "$description": "Card border radius"
+            },
+            "padding": {
+              "$scopes": ["GAP"],
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{spacing.6}",
+              "$description": "Card padding - 24px"
+            }
+          },
+          "heading": {
+            "h1": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.serif}",
+                "$description": "H1 font - Besley"
+              },
+              "font-size-mobile": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.4xl}",
+                "$description": "H1 mobile - 36px"
+              },
+              "font-size-desktop": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.5xl}",
+                "$description": "H1 desktop - 48px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.medium}",
+                "$description": "H1 weight - 500"
+              }
+            },
+            "h2": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.serif}",
+                "$description": "H2 font - Besley"
+              },
+              "font-size-mobile": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.3xl}",
+                "$description": "H2 mobile - 30px"
+              },
+              "font-size-desktop": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.4xl}",
+                "$description": "H2 desktop - 36px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.medium}",
+                "$description": "H2 weight - 500"
+              }
+            },
+            "h3": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.serif}",
+                "$description": "H3 font - Besley"
+              },
+              "font-size-mobile": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.2xl}",
+                "$description": "H3 mobile - 24px"
+              },
+              "font-size-desktop": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.3xl}",
+                "$description": "H3 desktop - 30px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.medium}",
+                "$description": "H3 weight - 500"
+              }
+            },
+            "h4": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.serif}",
+                "$description": "H4 font - Besley"
+              },
+              "font-size-mobile": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.xl}",
+                "$description": "H4 mobile - 20px"
+              },
+              "font-size-desktop": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.2xl}",
+                "$description": "H4 desktop - 24px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.medium}",
+                "$description": "H4 weight - 500"
+              }
+            },
+            "h5": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.sans}",
+                "$description": "H5 font - TASA Orbiter"
+              },
+              "font-size-mobile": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.lg}",
+                "$description": "H5 mobile - 18px"
+              },
+              "font-size-desktop": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.xl}",
+                "$description": "H5 desktop - 20px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.semibold}",
+                "$description": "H5 weight - 600"
+              }
+            },
+            "h6": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.sans}",
+                "$description": "H6 font - TASA Orbiter"
+              },
+              "font-size-mobile": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.base}",
+                "$description": "H6 mobile - 16px"
+              },
+              "font-size-desktop": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.lg}",
+                "$description": "H6 desktop - 18px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.semibold}",
+                "$description": "H6 weight - 600"
+              }
+            },
+            "body": {
+              "font-family": {
+                "$scopes": ["FONT_FAMILY"],
+                "$type": "string",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-family.sans}",
+                "$description": "Body font - TASA Orbiter"
+              },
+              "font-size": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-size.base}",
+                "$description": "Body font size - 16px"
+              },
+              "font-weight": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$libraryName": "",
+                "$collectionName": "SCC Online | Base Tokens",
+                "$value": "{typography.font-weight.normal}",
+                "$description": "Body weight - 400"
+              }
+            }
+          },
+          "semantic": {
+            "brand-primary": {
+              "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.maroon.700}",
+              "$description": "Primary brand color - SCC Maroon"
+            },
+            "brand-secondary": {
+              "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.red.600}",
+              "$description": "Secondary accent - SCC Red"
+            },
+            "brand-ai": {
+              "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.purple.600}",
+              "$description": "AI Pro brand color"
+            },
+            "text-primary": {
+              "$scopes": ["ALL_FILLS"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.gray.900}",
+              "$description": "Primary text color"
+            },
+            "text-secondary": {
+              "$scopes": ["ALL_FILLS"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.gray.600}",
+              "$description": "Secondary text color"
+            },
+            "text-muted": {
+              "$scopes": ["ALL_FILLS"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.gray.400}",
+              "$description": "Muted text color"
+            },
+            "border-default": {
+              "$scopes": ["STROKE_COLOR"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.gray.200}",
+              "$description": "Default border color"
+            },
+            "surface-default": {
+              "$scopes": ["ALL_FILLS"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.neutral.white}",
+              "$description": "Default surface/background"
+            },
+            "surface-subtle": {
+              "$scopes": ["ALL_FILLS"],
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "SCC Online | Base Tokens",
+              "$value": "{colors.gray.50}",
+              "$description": "Subtle background"
+            }
+          }
+        }
+      }
+    }
+  }
+]
